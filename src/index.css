@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* html,body{
+} */
+* {
+  scroll-behavior: smooth;
+}
+*::selection {
+  background-color: var(--greenColor);
+  color: var(--lightGreen);
+}
+:root {
+  --brownColor: #665044;
+  --greenColor: #59815b;
+  --lightGreen: #f2f1e7;
+}
+@font-face {
+  font-family: Paprika;
+  src: url(./assets/fonts/Paprika-Regular.ttf);
+}
+@font-face {
+  font-family: Fjalla;
+  src: url(./assets/fonts/FjallaOne-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(./assets/fonts/Quicksand-VariableFont_wght.ttf);
+}
+/* hiding scrollbar */
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* swiper paginate button */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--greenColor);
+}
+.swiper-pagination-bullet-active {
+  background: var(--greenColor);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
